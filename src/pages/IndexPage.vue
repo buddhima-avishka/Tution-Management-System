@@ -1,10 +1,10 @@
 <template>
   <q-page class="bg-black text-white">
     <!-- Full Screen Header Wrapper -->
-    <div class="column" style="height: 100vh">
+    <div class="column" style="min-height: 100vh">
       
       <!-- Navbar -->
-      <div class="q-py-sm q-px-xl col-auto" style="max-width: 1300px; margin: 0 auto; width: 100%">
+      <div class="q-py-sm q-px-lg q-px-md-xl col-auto" style="max-width: 1300px; margin: 0 auto; width: 100%">
         <q-toolbar class="q-py-sm bg-transparent">
           <q-btn flat no-caps no-wrap class="q-ml-xs text-white">
             <q-icon name="school" size="28px" />
@@ -28,10 +28,10 @@
 
       <!-- Hero Section (Centered) -->
       <div class="col flex flex-center q-py-lg overflow-hidden">
-        <div class="container q-px-xl w-full">
+        <div class="container q-px-lg q-px-md-xl w-full">
           <div class="row items-center q-col-gutter-xl reverse-wrap-md">
             <div class="col-12 col-md-6">
-              <div class="text-h2 text-weight-bolder text-white q-mb-md" style="line-height: 1.1;">
+              <div class="hero-title text-weight-bolder text-white q-mb-md">
                 Manage Your Tuition Class Like a Pro.
               </div>
               <p class="text-h6 text-grey-5 text-weight-regular q-mb-lg" style="line-height: 1.5; max-width: 500px;">
@@ -69,7 +69,7 @@
               </div>
             </div>
             
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6 gt-sm">
               <q-img 
                 src="~assets/hero-dark.png" 
                 class="hero-image rounded-borders shadow-20 glowing-border"
@@ -195,15 +195,15 @@
     <!-- Call to Action -->
     <div class="q-py-xl q-my-xl">
       <div class="container q-px-md">
-        <div class="bg-white text-black rounded-borders q-pa-xl text-center shadow-10" style="border-radius: 24px;">
+        <div class="bg-grey-10 text-white rounded-borders q-pa-xl text-center shadow-10 border-grey-9" style="border-radius: 24px; border: 1px solid #333;">
           <div class="text-h3 text-weight-bold q-mb-md">Ready to modernize your institute?</div>
-          <div class="text-h6 text-grey-8 q-mb-xl" style="font-weight: 300;">
+          <div class="text-h6 text-grey-5 q-mb-xl" style="font-weight: 300;">
             Join hundreds of institutes delivering better education with EduManager.
           </div>
           <q-btn 
             unelevated 
-            color="black" 
-            text-color="white" 
+            color="white" 
+            text-color="black" 
             label="Start Your Free Trial" 
             size="lg" 
             no-caps 
@@ -336,6 +336,17 @@ const features = [
 
 .border-grey-9 {
   border-color: #333;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  line-height: 1.1;
+}
+
+@media (min-width: 1024px) {
+  .hero-title {
+    font-size: 3.75rem;
+  }
 }
 
 .border-top-bottom {
